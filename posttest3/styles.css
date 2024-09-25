@@ -44,12 +44,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--background-color);
+    background-color: var(--main-color);
     border-radius: 20px;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--main-color);
     margin: 0;
     padding: 0;
     right: 0;
@@ -128,16 +128,30 @@ a,
     display: flex;
     width: 228px;
     margin: 0;
+    justify-content: flex-end;
 }
 
 .buy-now {
     margin-left: auto;
     align-self: center;
     color: var(--text-putih);
+    padding: 10px;
+    margin-left: auto;
+}
+
+.buy-now:hover {
+    color: var(--title-color);
+    background-color: var(--background-color);
+    border-radius: 100%;
+    padding: 10px;
+    transition: all 0.4s;   
+}
+
+#buy {
+    cursor: pointer;
 }
 
 .darkmode-toggle {
-    background-color: var(--text-color1);
     color: var(--text-putih);
     border-radius: 100px;
     margin-left: 40px;
@@ -148,12 +162,14 @@ a,
 
 #icon {
     width: 30px;
+    height: 30px;
     cursor: pointer;
     color: var(--text-putih);
 }
 
 .hamburger {
     display: none;
+    margin-left: auto;
 }
 
 .home {
@@ -322,8 +338,14 @@ footer {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: var(--background-color);
+        background: var(--text-putih);
         margin: 6px 0;
+    }
+
+    .ham {
+        width: 30px;
+        height: 30px;
+        align-self: center;
     }
 
     .menu-navbar.active {
