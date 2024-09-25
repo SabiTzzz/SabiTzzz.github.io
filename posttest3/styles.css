@@ -44,12 +44,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background-color: #F5F5F5;
     border-radius: 20px;
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: #F5F5F5;
     margin: 0;
     padding: 0;
     right: 0;
