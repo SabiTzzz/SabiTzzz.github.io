@@ -46,8 +46,12 @@
                         <td><?= htmlspecialchars($order["jumlah"]) ?></td>
                         <td><?= htmlspecialchars($order["ukuran"]) ?></td>
                         <td id="btn">
-                            <a title="Edit" href="pesanan/psn-edit.php?id=<?= $order["id"] ?>"><i class="fa-solid fa-pen-to-square" style="color:white;"></i></a>
-                            <a title="Delete" href="pesanan/psn-hapus.php?id=<?= $order["id"] ?>" onclick="return confirm('Yakin ingin menghapus data?')"><i class="fa-solid fa-trash" style="color:white;"></i></a>
+                            <a title="Edit" href="pesanan/psn-edit.php?id=<?= $order['id'] ?>" class="action-button edit">
+                                <i class="fa-solid fa-pen-to-square" style="color: white;"></i>
+                            </a>
+                            <a title="Delete" href="pesanan/psn-hapus.php?id=<?= $order['id'] ?>" class="action-button delete" onclick="return confirm('Yakin ingin menghapus data?')">
+                                <i class="fa-solid fa-trash" style="color: white;"></i>
+                            </a>
                         </td>
                     </tr>
                     <?php $i++; endforeach; ?>
